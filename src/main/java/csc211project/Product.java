@@ -1,7 +1,7 @@
 package csc211project;
 
 //Product phone = new ...
-abstract class Product {
+public abstract class Product {
 	String product;
 	float price;
 	String type;

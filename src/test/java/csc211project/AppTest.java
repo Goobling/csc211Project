@@ -17,11 +17,19 @@ public class AppTest {
     public void testElectronicInit() {
         Product phone = new Electronics("phone", 999.99f, "apple");
 
-        // ASSERTTT
+        // Produict test
         assertEquals("phone", phone.product);
 
         assertEquals("Electronics", phone.type);
         assertEquals(999.99f, phone.price);
         assertEquals("apple", phone.getBrand());
+
+        // User test
+
+        User adam = new Admin("adam", "adamsEmail@email.com");
+        assertEquals("adam", adam.name);
+        assertEquals("adamsEmail@email.com", adam.email);
+        assertEquals("adam is an ADMIN", adam.printIsAdmin());
+
     }
 }
