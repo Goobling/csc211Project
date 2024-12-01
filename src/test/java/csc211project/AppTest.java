@@ -41,11 +41,17 @@ public class AppTest {
         Product phone = new Electronics("phone", 999.99f, "apple");
         Product shirt = new Clothing("blackShirt", 700.00f, "amari");
         Product pear = new Grocery("pear", 1.99f, "fruit");
-        ArrayList<String> adamCart = new ArrayList<>();
+        // ArrayList<String> adamCart = new ArrayList<>();
+        ArrayList<Product> adamProducts = new ArrayList<>();
 
-        Order adamsOrder = new Cart(adam, adamCart);
+        Order adamsOrder = new Cart(adam, adamProducts);
 
-        assertEquals("added phone\ncart now: [phone]", adamsOrder.addProduct(phone));
+        /* assertEquals("[" + phone + "]", */
+        adamsOrder.addProduct(phone);
 
+        /* assertEquals(phone, */
+        adamsOrder.addProduct(pear);
+
+        assertEquals(adamProducts, adamsOrder.addProduct(shirt));
     }
 }
