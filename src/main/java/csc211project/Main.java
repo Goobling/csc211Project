@@ -41,7 +41,8 @@ public class Main {
 						"Clothing".equals(Product.type) ||
 						"Grocery".equals(Product.type))
 				.collect(Collectors.toList());
-		userFiltProds.forEach(System.out::println);
+		System.out.println(userFiltProds);
+		userFiltProds.forEach(product -> System.out.println(product.product));
 
 		// order
 		System.out.println("what items would you like to order from my store?");
@@ -49,5 +50,6 @@ public class Main {
 		Order userOrder = new Cart(nameUser, userProducts);
 		// process
 
+		scnr.close();
 	}
 }
