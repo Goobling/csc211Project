@@ -3,6 +3,8 @@ package csc211project;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 //import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 
 /**
@@ -30,6 +32,20 @@ public class AppTest {
         assertEquals("adam", adam.name);
         assertEquals("adamsEmail@email.com", adam.email);
         assertEquals("adam is an ADMIN", adam.printIsAdmin());
+
+    }
+
+    @Test
+    public void testOrderInit() {
+        User adam = new Customer("adam", "adamEmail@email.com");
+        Product phone = new Electronics("phone", 999.99f, "apple");
+        Product shirt = new Clothing("blackShirt", 700.00f, "amari");
+        Product pear = new Grocery("pear", 1.99f, "fruit");
+        ArrayList<String> adamCart = new ArrayList<>();
+
+        Order adamsOrder = new Cart(adam, adamCart);
+
+        assertEquals("added phone\ncart now: [phone]", adamsOrder.addProduct(phone));
 
     }
 }
