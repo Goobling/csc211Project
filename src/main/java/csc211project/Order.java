@@ -16,6 +16,8 @@ public abstract class Order {
 	// abstract List<Product> addProduct(Product cartProduct);
 	// abstract void cartFilter()
 	abstract List<Product> discount(List<Product> listProduct);
+
+	abstract List<Product> pricing(List<Product> listProduct);
 }
 
 // ...cart(adam, adamsCart)
@@ -60,11 +62,22 @@ class Cart extends Order {
 	List<Product> discount(List<Product> listProduct) {
 
 		for (int i = 0; i < listProduct.size(); i++) {
-			System.out.println("10% discount applied to ");
-			System.out.println(listProduct.get(i));
+			// System.out.println("10% discount applied to ");
+			// System.out.println(listProduct.get(i));
 			listProduct.forEach((n) -> n.discount());
+			listProduct.forEach(product -> System.out.println(product.product));
 		}
+		System.out.println("10% discount applied to ");
 		return listProduct;
 	}
 
+	@Override
+	List<Product> pricing(List<Product> listProduct) {
+		System.out.println("Prices for these items are");
+		listProduct.forEach(product -> System.out.println(product.price));
+		// for (int i =0; i < listProduct.size(); i++){
+
+		// }
+		return listProduct;
+	}
 }
