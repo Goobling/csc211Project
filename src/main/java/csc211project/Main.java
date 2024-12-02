@@ -36,13 +36,46 @@ public class Main {
 
 		// print PRODUCT LISt
 		System.out.println("here is whats in store");
-		List<Product> userFiltProds = userProducts.stream()
-				.filter(Product -> "Electronics".equals(Product.type) ||
-						"Clothing".equals(Product.type) ||
-						"Grocery".equals(Product.type))
-				.collect(Collectors.toList());
-		System.out.println(userFiltProds);
-		userFiltProds.forEach(product -> System.out.println(product.product));
+		System.out.println("we have electronics(1), clothing(2), and grocerys(3)");
+		int typeChoice = scnr.nextInt();
+
+		// choosing tyope of product to filter
+		if (typeChoice == 1) {
+
+			List<Product> userFiltProds = userProducts.stream()
+					.filter(Product -> "Electronics".equals(Product.type))// .filter(Product ->
+												// "Clothing".equals(Product.type)).filter("Grocery".equals(Product.type))
+
+					// .filter()
+					.collect(Collectors.toList());
+			System.out.println(userFiltProds);
+			userFiltProds.forEach(product -> System.out.println(product.product));
+
+		}
+
+		if (typeChoice == 2) {
+			List<Product> userFiltProds = userProducts.stream()
+					.filter(Product -> "Clothing".equals(Product.type))// .filter(Product ->
+												// "Clothing".equals(Product.type)).filter("Grocery".equals(Product.type))
+
+					// .filter()
+					.collect(Collectors.toList());
+			System.out.println(userFiltProds);
+			userFiltProds.forEach(product -> System.out.println(product.product));
+
+		}
+
+		if (typeChoice == 3) {
+			List<Product> userFiltProds = userProducts.stream()
+					.filter(Product -> "Grocery".equals(Product.type))// .filter(Product ->
+												// "Clothing".equals(Product.type)).filter("Grocery".equals(Product.type))
+
+					// .filter()
+					.collect(Collectors.toList());
+			System.out.println(userFiltProds);
+			userFiltProds.forEach(product -> System.out.println(product.product));
+
+		}
 
 		// order
 		System.out.println("what items would you like to order from my store?");
@@ -51,5 +84,6 @@ public class Main {
 		// process
 
 		scnr.close();
+
 	}
 }
