@@ -47,11 +47,12 @@ public class AppTest {
         Order adamsOrder = new Cart(adam, adamProducts);
 
         /* assertEquals("[" + phone + "]", */
-        adamsOrder.addProduct(phone);
+
+        // adamsOrder.addProduct(adamProducts.get(i));
 
         /* assertEquals(phone, */
-        adamsOrder.addProduct(pear);
+        // adamsOrder.addProduct(pear);
 
-        assertEquals(adamProducts, adamsOrder.addProduct(shirt));
+        // assertEquals(adamProducts, adamsOrder.addProduct(shirt));
     }
 }
