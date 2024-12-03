@@ -1,6 +1,8 @@
-For the following assignment write the code and upload it the GitHub.
 
-Document and explain the methods used in your solution.
+RUN WITH jar file -> https://file.io/7u3VtXdUFuT3
+can be run with
+java -jar PATH/TO/FIlE.jar
+
 
  E-commerce Platform Prototype
 
