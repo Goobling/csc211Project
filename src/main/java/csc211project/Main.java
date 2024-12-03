@@ -89,7 +89,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -110,7 +110,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -160,7 +160,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -185,7 +185,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -235,9 +235,10 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
+						// finish?
 						_init = false;
 					}
 
@@ -256,7 +257,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println(" are you done?");
+					System.out.println(" are you done? ex y | n");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -269,12 +270,16 @@ public class Main {
 			}
 
 			// order
-			// System.out.println("what items would you like to order from my store?");
-			// String userChoice = scnr.nextLine();
+			// system.out.println("what items would you like to order from my store?");
+			// string userchoice = scnr.nextline();
 			// process
 
 			// scnr.close();
 
 		}
+		userOrder.finish(finalCart);
+		System.out.println("invoice has been sent to " + email);
+		scnr.close();
+
 	}
 }
