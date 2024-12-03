@@ -89,7 +89,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -110,7 +110,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -160,7 +160,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -185,7 +185,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -235,7 +235,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;
@@ -256,7 +256,7 @@ public class Main {
 						finalCart.add(userPriceProds.get(i));
 					}
 					// done?
-					System.out.println("are you done?");
+					System.out.println(" are you done?");
 					String doneChoice = scnr.next();
 					if (doneChoice.equals("y")) {
 						_init = false;

@@ -64,8 +64,10 @@ class Cart extends Order {
 		for (int i = 0; i < listProduct.size(); i++) {
 			// System.out.println("10% discount applied to ");
 			// System.out.println(listProduct.get(i));
-			listProduct.forEach((n) -> n.discount());
-			listProduct.forEach(product -> System.out.println(product.product));
+			listProduct.forEach((Product) -> Product.price = Product.price - Product.price * .10f);
+			// listProduct.forEach((n) -> n.discount());
+
+			// listProduct.forEach(product -> System.out.println(product.product));
 		}
 		System.out.println("10% discount applied to ");
 		return listProduct;
