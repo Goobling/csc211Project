@@ -1,5 +1,4 @@
-
-RUN WITH jar file -> https://file.io/7u3VtXdUFuT3
+DOWNLOAD AND RUN jar file -> target/project-1.jar
 can be run with
 java -jar PATH/TO/FIlE.jar
 
